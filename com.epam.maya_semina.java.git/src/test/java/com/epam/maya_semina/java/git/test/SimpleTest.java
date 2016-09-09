@@ -17,7 +17,7 @@ public class SimpleTest {
 	public void setUp() {
 		System.setProperty("webdriver.chrome.driver", "D:\\workspace\\com.epam.maya_semina.lesson_10\\src\\test\\resources\\chromedriver.exe");//"D:\\workspace\\com.epam.maya_semina.lesson_10\\src\\test\\resources\\chromedriver.exe");
 		driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
 
 	@Test
