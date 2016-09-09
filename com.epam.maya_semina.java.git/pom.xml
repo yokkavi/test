@@ -17,4 +17,13 @@
 			<version>3.0.0-beta3</version>
 		</dependency>
 	</dependencies>
+	<plugins>
+	<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-resources-plugin</artifactId>
+    <configuration>
+         <encoding>UTF-8</encoding>
+    </configuration>
+</plugin>
+</plugins>
 </project>
