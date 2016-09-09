@@ -15,6 +15,7 @@ public class SimpleTest {
 
 	@BeforeClass
 	public void setUp() {
+		System.out.println("hello!");
 		System.setProperty("webdriver.chrome.driver", "D:\\workspace\\com.epam.maya_semina.lesson_10\\src\\test\\resources\\chromedriver.exe");//"D:\\workspace\\com.epam.maya_semina.lesson_10\\src\\test\\resources\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -23,7 +24,7 @@ public class SimpleTest {
 	@Test
 	public void test() {
 		driver.get("https://yandex.ru");
-		System.out.println("hello!");
+
 		Assert.assertTrue(driver.getTitle().equals("яндекс"));
 	}
 	
